@@ -6,33 +6,60 @@ $white: rgba(#fff, 0.85);
 $orange: #d96245;
 
 html {
-  background: black url(../img/bg.png) no-repeat 50% 100%;
+  background: black url(../img/bg-s.png) no-repeat 50% 100%;
   font-family: 'Quicksand', sans-serif;
   height: 100%;
 }
 
 a {
   text-decoration: none;
-  color: $white;
-}
-a:hover {
-  color: $orange;
+  color: rgba(#000, 0.6);
+  text-shadow: 0 1px 0 $orange;
 }
 
-h1 {
-  margin-bottom: 2em;
+a:hover {
+  color: rgba(#000, 0.2);
 }
 
 article {
-  width: 535px;
+  width: 80%;
+  max-width: 535px;
   margin: 5% auto 0 auto;
   color: $white;
   p {
+    font-size: 1.25em;
     margin-bottom: 1em;
-    font-size: 1.75em;
   }
   nav {
-    font-size: 1.25em;
+    font-size: 0.875em;
+  }
+  h1 {
+    margin-bottom: 1em;
+    img {
+      width: 100%;
+    }
   }
 }
 
+@media screen and (min-width: 480px) {
+  html {
+    background-image: url(../img/bg-m.png);
+  }
+  h1 {
+    margin-bottom: 2em;
+  }
+  article {
+    p {
+      font-size: 1.75em;
+    }
+    nav {
+      font-size: 1.25em;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    background-image: url(../img/bg.png);
+  }
+}

@@ -7,18 +7,22 @@
     <meta name="author" content="Markus Tacker | http://coderbyheart.de/">
     <!-- See /humans.txt for more infos -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./build/css/styles-min.css" type="text/css">
+    <?php if(isset($_GET['dev'])): ?>
+    <link rel="stylesheet" href="./assets/css/styles.css?<?php echo time(); ?>" type="text/css">
+    <?php else: ?>
+    <link rel="stylesheet" href="./build/css/styles-min.css?<?php echo filemtime('./build/css/styles-min.css'); ?>" type="text/css">
+    <?php endif; ?>
     <link href="http://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
 </head>
 <body>
 <article>
     <h1>
-        <img src="build/img/logo.png" alt="FORMATIVE" width="535" height="82">
+        <img src="build/img/logo.png" alt="FORMATIVE" >
     </h1>
 
-    <p>a collective of freelancers and<br>self-employed entrepreneurs<br>from the rhein-main area</p>
+    <p>a collective of freelancers and self&#8209;employed entrepreneurs from the rhein&#8209;main&nbsp;area</p>
 
-    <p>we believe that there is a better way<br>to do contract work</p>
+    <p>we believe that there is a better&nbsp;way to do contract&nbsp;work</p>
     <nav>
         <a href="https://twitter.com/FORMATIVEco" rel="me"><i class="icon-twitter"></i> follow us</a>
         <a href="https://groups.google.com/group/formative-discuss" rel="me" class="align-right">join the discussion <i class="icon-comments-alt"></i></a>
