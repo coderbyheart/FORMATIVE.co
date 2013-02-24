@@ -1,0 +1,38 @@
+@import "reset";
+@import "font-awesome";
+@import "helpers";
+
+$white: rgba(#fff, 0.85);
+$orange: #d96245;
+
+html {
+  background: black url(../img/bg.png) no-repeat 50% 100%;
+  font-family: 'Quicksand', sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+a:hover {
+  color: $orange;
+}
+
+h1 {
+  margin-bottom: 2em;
+}
+
+article {
+  width: 535px;
+  margin: 5% auto 0 auto;
+  color: $white;
+  p {
+    margin-bottom: 1em;
+    font-size: 1.75em;
+  }
+  nav {
+    font-size: 1.25em;
+  }
+}
+

@@ -1,0 +1,14 @@
+Made by:
+
+    Markus Tacker <m@coderbyheart.de>
+
+Made with:
+
+    normalize.css                   http://github.com/necolas/normalize.css
+    Sass                            http://sass-lang.com/
+    YUI Compressor's CSS minifier   http://developer.yahoo.com/yui/compressor/css.html
+    OptiPNG                         http://optipng.sourceforge.net/
+    Apache Ant                      http://ant.apache.org/
+    Font Awesome                    http://fortawesome.github.com/Font-Awesome
+    Google Webfonts                 http://www.google.com/webfonts
+    VGER Font                       http://fontm.com/vger-grotesque-font/
